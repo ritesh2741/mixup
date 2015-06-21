@@ -1,0 +1,17 @@
+<%= form_for :profile, url: profiles_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </p>
+  <p>
+    <%= f.label :Gender %><br>
+    <%= f.text_field :gender %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
